@@ -9,11 +9,11 @@
 
 **DocuSmart** est une application d'analyse intelligente de documents utilisant l'IA pour extraire, résumer, analyser et traduire le contenu de vos fichiers PDF, DOCX et TXT.
 
-## 👀 Aperçu de l'Application
+![DocuSmart Interface](assets/doc_analysis_illustration.png)
 
-![Interface DocuSmart](assets/docusmart-interface-preview.png)
+## Apercu de l'Application
 
-*Capture d'écran de l'interface DocuSmart montrant l'upload d'un document PDF, la génération automatique de résumé et l'interface utilisateur moderne avec navigation par sidebar.*
+![DocuSmart Interface](assets/)
 
 ## 🚀 Fonctionnalités
 
@@ -279,7 +279,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 **Votre Nom**
 - GitHub: [@votre-username](https://github.com/YannickQuerin)
-- LinkedIn: [Votre Profil](https://www.linkedin.com/in/yannick-quérin/)
+- LinkedIn: [Votre Profil](https://www.linkedin.com/in/yannick-qu%C3%A9rin/)
 - Email: yannickquerin@gmail.com
 
 ## 🙏 Remerciements
@@ -287,7 +287,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 - [OpenAI](https://openai.com/) pour les modèles GPT
 - [LangChain](https://langchain.com/) pour le framework LLM
 - [Streamlit](https://streamlit.io/) pour l'interface utilisateur
-- [ChromaDB](https://www.trychroma.com/) pour la base vectorielle
+- [Chroma](https://www.trychroma.com/) pour la base vectorielle
 
 ---
 
