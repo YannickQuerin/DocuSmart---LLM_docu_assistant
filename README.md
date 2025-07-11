@@ -276,7 +276,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 **Votre Nom**
 - GitHub: [@votre-username](https://github.com/YannickQuerin)
-- LinkedIn: [Votre Profil](https://www.linkedin.com/in/yannick-qu%C3%A9rin/)
+- LinkedIn: [Votre Profil](https://www.linkedin.com/in/yannick-quérin/)
 - Email: yannickquerin@gmail.com
 
 ## 🙏 Remerciements
