@@ -272,10 +272,6 @@ Les contributions sont les bienvenues ! Pour contribuer :
 - [ ] **API REST** : Endpoints pour intégration externe
 - [ ] **Authentification** : Système de comptes utilisateurs
 
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 ## 👨‍💻 Auteur
 
 **Votre Nom**
@@ -295,20 +291,4 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ⭐ **N'hésitez pas à donner une étoile si ce projet vous a été utile !**
 ```
 
-Cette documentation complète couvre tous les aspects de votre projet DocuSmart avec :
-
-## 📋 **Sections incluses :**
-
-1. **Header avec badges** - Statut du projet et technologies
-2. **Description et fonctionnalités** - Vue d'ensemble claire
-3. **Architecture détaillée** - Structure des fichiers
-4. **Technologies utilisées** - Stack technique complète
-5. **Installation pas-à-pas** - Guide d'installation détaillé
-6. **Guide d'utilisation** - Comment utiliser l'application
-7. **Documentation des modules** - Explication de chaque composant
-8. **Exemples de code** - Snippets d'utilisation
-9. **Métriques et sécurité** - Aspects techniques importants
-10. **Dépannage** - Solutions aux problèmes courants
-11. **Contribution et roadmap** - Guide pour les contributeurs
-12. **Licence et crédits** - Informations légales
 
