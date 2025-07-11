@@ -9,7 +9,11 @@
 
 **DocuSmart** est une application d'analyse intelligente de documents utilisant l'IA pour extraire, résumer, analyser et traduire le contenu de vos fichiers PDF, DOCX et TXT.
 
-![DocuSmart Interface](assets/doc_analysis_illustration.png)
+## 👀 Aperçu de l'Application
+
+![Interface DocuSmart](assets/docusmart-interface-preview.png)
+
+*Capture d'écran de l'interface DocuSmart montrant l'upload d'un document PDF, la génération automatique de résumé et l'interface utilisateur moderne avec navigation par sidebar.*
 
 ## 🚀 Fonctionnalités
 
@@ -22,7 +26,7 @@
 
 ## 🏗️ Architecture du Projet
 
-```
+\`\`\`
 DocuSmart/
 ├── app_streamlit.py          # Interface utilisateur (Streamlit)
 ├── document_processor.py     # Extraction, vectorisation, embeddings
@@ -35,7 +39,7 @@ DocuSmart/
 ├── requirements.txt          # Dépendances Python
 ├── README.md                 # Documentation du projet
 └── chroma_db/               # Base de données vectorielle (générée automatiquement)
-```
+\`\`\`
 
 ## 🛠️ Technologies Utilisées
 
@@ -66,13 +70,13 @@ DocuSmart/
 - Clé API OpenAI
 
 ### 1. Cloner le repository
-```bash
+\`\`\`bash
 git clone https://github.com/votre-username/docusmart.git
 cd docusmart
-```
+\`\`\`
 
 ### 2. Créer un environnement virtuel
-```bash
+\`\`\`bash
 python -m venv venv
 
 # Sur Windows
@@ -80,30 +84,30 @@ venv\\Scripts\\activate
 
 # Sur macOS/Linux
 source venv/bin/activate
-```
+\`\`\`
 
 ### 3. Installer les dépendances
-```bash
+\`\`\`bash
 pip install -r requirements.txt
-```
+\`\`\`
 
 ### 4. Configuration des variables d'environnement
-Créez un fichier `.env` à la racine du projet :
+Créez un fichier \`.env\` à la racine du projet :
 
-```env
+\`\`\`env
 OPENAI_API_KEY=votre_clé_api_openai_ici
-```
+\`\`\`
 
 > **⚠️ Important** : Obtenez votre clé API sur [OpenAI Platform](https://platform.openai.com/api-keys)
 
 ## 🚀 Utilisation
 
 ### Lancement de l'application
-```bash
+\`\`\`bash
 streamlit run app_streamlit.py
-```
+\`\`\`
 
-L'application sera accessible à l'adresse : `http://localhost:8501`
+L'application sera accessible à l'adresse : \`http://localhost:8501\`
 
 ### Interface utilisateur
 
@@ -124,8 +128,8 @@ L'application sera accessible à l'adresse : `http://localhost:8501`
 **Responsabilité** : Traitement et vectorisation des documents
 
 **Fonctions principales :**
-- `load_file(uploaded_file)` : Chargement universel de fichiers
-- `process_document(uploaded_file)` : Pipeline complet de traitement
+- \`load_file(uploaded_file)\` : Chargement universel de fichiers
+- \`process_document(uploaded_file)\` : Pipeline complet de traitement
 
 **Processus :**
 1. Détection automatique du type de fichier
@@ -138,8 +142,8 @@ L'application sera accessible à l'adresse : `http://localhost:8501`
 **Responsabilité** : Système de questions-réponses contextuel
 
 **Fonctions principales :**
-- `initialize_qa_chain(vectorstore)` : Initialisation de la chaîne Q&A
-- `ask_question(qa_chain, question)` : Traitement des questions
+- \`initialize_qa_chain(vectorstore)\` : Initialisation de la chaîne Q&A
+- \`ask_question(qa_chain, question)\` : Traitement des questions
 
 **Mécanisme :**
 1. Vectorisation de la question utilisateur
@@ -177,7 +181,7 @@ L'application sera accessible à l'adresse : `http://localhost:8501`
 ## 💡 Exemples d'Usage
 
 ### Résumé de document
-```python
+\`\`\`python
 from document_processor import process_document
 from summarizer import summarize_text
 
@@ -187,10 +191,10 @@ raw_text, chunks, vectorstore = process_document(uploaded_file)
 # Génération du résumé
 summary = summarize_text(raw_text)
 print(f"Résumé : {summary}")
-```
+\`\`\`
 
 ### Questions-Réponses
-```python
+\`\`\`python
 from qa_chain import initialize_qa_chain, ask_question
 
 # Initialisation de la chaîne Q&A
@@ -200,17 +204,17 @@ qa_chain = initialize_qa_chain(vectorstore)
 question = "Quels sont les points clés de ce document ?"
 answer = ask_question(qa_chain, question)
 print(f"Réponse : {answer}")
-```
+\`\`\`
 
 ### Traduction
-```python
+\`\`\`python
 from translator import translate_text
 
 # Traduction en anglais
 text_fr = "Bonjour, comment allez-vous ?"
 text_en = translate_text(text_fr, "en")
 print(f"Traduction : {text_en}")
-```
+\`\`\`
 
 ## 📊 Métriques et Coûts
 
@@ -231,21 +235,21 @@ L'application suit automatiquement :
 ### Erreurs courantes
 
 **1. Erreur de clé API**
-```
+\`\`\`
 Error: OpenAI API key not found
-```
-**Solution** : Vérifiez que votre fichier `.env` contient `OPENAI_API_KEY=votre_clé`
+\`\`\`
+**Solution** : Vérifiez que votre fichier \`.env\` contient \`OPENAI_API_KEY=votre_clé\`
 
 **2. Erreur de dépendances**
-```
+\`\`\`
 ModuleNotFoundError: No module named 'streamlit'
-```
-**Solution** : Réinstallez les dépendances avec `pip install -r requirements.txt`
+\`\`\`
+**Solution** : Réinstallez les dépendances avec \`pip install -r requirements.txt\`
 
 **3. Erreur de fichier non supporté**
-```
+\`\`\`
 ValueError: Type de fichier non supporté
-```
+\`\`\`
 **Solution** : Utilisez uniquement des fichiers PDF, DOCX ou TXT
 
 ## 🤝 Contribution
@@ -253,9 +257,9 @@ ValueError: Type de fichier non supporté
 Les contributions sont les bienvenues ! Pour contribuer :
 
 1. Forkez le projet
-2. Créez une branche feature (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Pushez vers la branche (`git push origin feature/AmazingFeature`)
+2. Créez une branche feature (\`git checkout -b feature/AmazingFeature\`)
+3. Committez vos changements (\`git commit -m 'Add some AmazingFeature'\`)
+4. Pushez vers la branche (\`git push origin feature/AmazingFeature\`)
 5. Ouvrez une Pull Request
 
 ### Roadmap
@@ -274,9 +278,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ## 👨‍💻 Auteur
 
 **Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-- LinkedIn: [Votre Profil](https://linkedin.com/in/votre-profil)
-- Email: votre.email@example.com
+- GitHub: [@votre-username](https://github.com/YannickQuerin)
+- LinkedIn: [Votre Profil](https://www.linkedin.com/in/yannick-quérin/)
+- Email: yannickquerin@gmail.com
 
 ## 🙏 Remerciements
 
@@ -288,22 +292,3 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ---
 
 ⭐ **N'hésitez pas à donner une étoile si ce projet vous a été utile !**
-```
-
-Cette documentation complète couvre tous les aspects de votre projet DocuSmart avec :
-
-## 📋 **Sections incluses :**
-
-1. **Header avec badges** - Statut du projet et technologies
-2. **Description et fonctionnalités** - Vue d'ensemble claire
-3. **Architecture détaillée** - Structure des fichiers
-4. **Technologies utilisées** - Stack technique complète
-5. **Installation pas-à-pas** - Guide d'installation détaillé
-6. **Guide d'utilisation** - Comment utiliser l'application
-7. **Documentation des modules** - Explication de chaque composant
-8. **Exemples de code** - Snippets d'utilisation
-9. **Métriques et sécurité** - Aspects techniques importants
-10. **Dépannage** - Solutions aux problèmes courants
-11. **Contribution et roadmap** - Guide pour les contributeurs
-12. **Licence et crédits** - Informations légales
-
