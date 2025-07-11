@@ -13,7 +13,7 @@
 
 ## Apercu de l'Application
 
-![DocuSmart Interface](assets/)
+![DocuSmart Interface](assets/exemple_2_illustration_docusmart.png)
 
 ## 🚀 Fonctionnalités
 
